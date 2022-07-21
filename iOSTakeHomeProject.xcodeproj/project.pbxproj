@@ -36,6 +36,132 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F03659F2889E349003896CB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3F0365A02889E351003896CB /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				3F0365A42889E36C003896CB /* Settings */,
+				3F0365A32889E366003896CB /* Detail */,
+				3F0365A22889E361003896CB /* Create */,
+				3F0365A12889E357003896CB /* People */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		3F0365A12889E357003896CB /* People */ = {
+			isa = PBXGroup;
+			children = (
+				3F0365A72889E380003896CB /* View Models */,
+				3F0365A62889E379003896CB /* Model */,
+				3F0365A52889E374003896CB /* Views */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		3F0365A22889E361003896CB /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				3F0365AA2889E3CB003896CB /* Views */,
+				3F0365A92889E3C3003896CB /* Model */,
+				3F0365A82889E3BA003896CB /* View Models */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		3F0365A32889E366003896CB /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				3F0365AD2889E3E4003896CB /* Views */,
+				3F0365AC2889E3DE003896CB /* Model */,
+				3F0365AB2889E3D8003896CB /* View Models */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		3F0365A42889E36C003896CB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				3F0365AE2889E419003896CB /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		3F0365A52889E374003896CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F0365A62889E379003896CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F0365A72889E380003896CB /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		3F0365A82889E3BA003896CB /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		3F0365A92889E3C3003896CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F0365AA2889E3CB003896CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F0365AB2889E3D8003896CB /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		3F0365AC2889E3DE003896CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3F0365AD2889E3E4003896CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3F0365AE2889E419003896CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		3F56E98628884C6000017492 = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +181,8 @@
 		3F56E99128884C6000017492 /* iOSTakeHomeProject */ = {
 			isa = PBXGroup;
 			children = (
+				3F0365A02889E351003896CB /* Features */,
+				3F03659F2889E349003896CB /* Base */,
 				3F56E9A028884D0B00017492 /* Resources */,
 				3F56E99228884C6000017492 /* iOSTakeHomeProjectApp.swift */,
 				3F56E99428884C6100017492 /* ContentView.swift */,
