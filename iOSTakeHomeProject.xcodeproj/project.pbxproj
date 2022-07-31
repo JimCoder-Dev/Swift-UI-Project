@@ -14,6 +14,8 @@
 		3F0B63F1289458B100E9A360 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B63F0289458B100E9A360 /* UsersResponse.swift */; };
 		3F0B63F42894597B00E9A360 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B63F32894597B00E9A360 /* Models.swift */; };
 		3F0B63F7289459BC00E9A360 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B63F6289459BC00E9A360 /* StaticJSONMapper.swift */; };
+		3F1964B52896E0FA00480446 /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1964B42896E0FA00480446 /* PersonItemView.swift */; };
+		3F1964B82896E42400480446 /* PillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1964B72896E42400480446 /* PillView.swift */; };
 		3F56E99328884C6000017492 /* iOSTakeHomeProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56E99228884C6000017492 /* iOSTakeHomeProjectApp.swift */; };
 		3F56E99728884C6200017492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F56E99628884C6200017492 /* Assets.xcassets */; };
 		3F56E99A28884C6200017492 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F56E99928884C6200017492 /* Preview Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		3F0B63F0289458B100E9A360 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
 		3F0B63F32894597B00E9A360 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		3F0B63F6289459BC00E9A360 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
+		3F1964B42896E0FA00480446 /* PersonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemView.swift; sourceTree = "<group>"; };
+		3F1964B72896E42400480446 /* PillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillView.swift; sourceTree = "<group>"; };
 		3F56E98F28884C6000017492 /* iOSTakeHomeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTakeHomeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F56E99228884C6000017492 /* iOSTakeHomeProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSTakeHomeProjectApp.swift; sourceTree = "<group>"; };
 		3F56E99628884C6200017492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -52,6 +56,7 @@
 		3F03659F2889E349003896CB /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				3F1964B62896E41800480446 /* Views */,
 				3F0B63F5289459AF00E9A360 /* Mapper */,
 				3F0B63F22894597000E9A360 /* Model */,
 			);
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				3F09E0EF28958B01004CB00F /* PeopleView.swift */,
+				3F1964B42896E0FA00480446 /* PersonItemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -203,6 +209,14 @@
 				3F0B63F6289459BC00E9A360 /* StaticJSONMapper.swift */,
 			);
 			path = Mapper;
+			sourceTree = "<group>";
+		};
+		3F1964B62896E41800480446 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3F1964B72896E42400480446 /* PillView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		3F56E98628884C6000017492 = {
@@ -326,12 +340,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0B63F7289459BC00E9A360 /* StaticJSONMapper.swift in Sources */,
+				3F1964B82896E42400480446 /* PillView.swift in Sources */,
 				3F56E9A228884D1D00017492 /* Symbols.swift in Sources */,
 				3F09E0F028958B01004CB00F /* PeopleView.swift in Sources */,
 				3F56E9A4288852E300017492 /* Theme.swift in Sources */,
 				3F0B63EF2894584600E9A360 /* UserDetailResponse.swift in Sources */,
 				3F56E99328884C6000017492 /* iOSTakeHomeProjectApp.swift in Sources */,
 				3F0B63F1289458B100E9A360 /* UsersResponse.swift in Sources */,
+				3F1964B52896E0FA00480446 /* PersonItemView.swift in Sources */,
 				3F0B63F42894597B00E9A360 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
