@@ -21,6 +21,7 @@
 		3F56E99A28884C6200017492 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F56E99928884C6200017492 /* Preview Assets.xcassets */; };
 		3F56E9A228884D1D00017492 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56E9A128884D1D00017492 /* Symbols.swift */; };
 		3F56E9A4288852E300017492 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56E9A3288852E300017492 /* Theme.swift */; };
+		3F77F82B28997079003DC681 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77F82A28997079003DC681 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		3F56E99928884C6200017492 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3F56E9A128884D1D00017492 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		3F56E9A3288852E300017492 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		3F77F82A28997079003DC681 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		3FED995F288B1276005A3122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +177,7 @@
 		3F0365AD2889E3E4003896CB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3F77F82A28997079003DC681 /* DetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				3F56E9A228884D1D00017492 /* Symbols.swift in Sources */,
 				3F09E0F028958B01004CB00F /* PeopleView.swift in Sources */,
 				3F56E9A4288852E300017492 /* Theme.swift in Sources */,
+				3F77F82B28997079003DC681 /* DetailView.swift in Sources */,
 				3F0B63EF2894584600E9A360 /* UserDetailResponse.swift in Sources */,
 				3F56E99328884C6000017492 /* iOSTakeHomeProjectApp.swift in Sources */,
 				3F0B63F1289458B100E9A360 /* UsersResponse.swift in Sources */,

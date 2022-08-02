@@ -10,6 +10,11 @@ struct iOSTakeHomeProjectApp: App {
                         Symbols.person
                         Text("Home")
                     }
+                DetailView()
+                    .tabItem{
+                        Symbols.plus
+                        Text("Detail")
+                    }
             }
         }
     }
