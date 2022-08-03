@@ -12,8 +12,15 @@ struct PeopleView: View {
                 background
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 16){
-                        ForEach(users, id: \.id){ item in
-                            PersonItemView(user: item)
+                        ForEach(users, id: \.id){ user in
+                            
+                            NavigationLink{
+                                DetailView()
+                            }label: {
+                                PersonItemView(user: user)
+                            }
+                            
+                            
                         }
                     }.padding()
                 }
