@@ -22,6 +22,7 @@
 		3F56E9A228884D1D00017492 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56E9A128884D1D00017492 /* Symbols.swift */; };
 		3F56E9A4288852E300017492 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56E9A3288852E300017492 /* Theme.swift */; };
 		3F77F82B28997079003DC681 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77F82A28997079003DC681 /* DetailView.swift */; };
+		3FC3F530289C101D006E44E4 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3F52F289C101D006E44E4 /* CreateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		3F56E9A128884D1D00017492 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		3F56E9A3288852E300017492 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		3F77F82A28997079003DC681 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		3FC3F52F289C101D006E44E4 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		3FED995F288B1276005A3122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +157,7 @@
 		3F0365AA2889E3CB003896CB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3FC3F52F289C101D006E44E4 /* CreateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 				3F56E99328884C6000017492 /* iOSTakeHomeProjectApp.swift in Sources */,
 				3F0B63F1289458B100E9A360 /* UsersResponse.swift in Sources */,
 				3F1964B52896E0FA00480446 /* PersonItemView.swift in Sources */,
+				3FC3F530289C101D006E44E4 /* CreateView.swift in Sources */,
 				3F0B63F42894597B00E9A360 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
