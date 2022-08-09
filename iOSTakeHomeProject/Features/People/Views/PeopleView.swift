@@ -18,7 +18,7 @@ struct PeopleView: View {
                         ForEach(vm.users, id: \.id){ user in
                             
                             NavigationLink{
-                                DetailView()
+                                DetailView(userId: user.id)
                             }label: {
                                 PersonItemView(user: user)
                             }

@@ -14,6 +14,7 @@
 		3F0B63F1289458B100E9A360 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B63F0289458B100E9A360 /* UsersResponse.swift */; };
 		3F0B63F42894597B00E9A360 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B63F32894597B00E9A360 /* Models.swift */; };
 		3F0B63F7289459BC00E9A360 /* StaticJSONMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B63F6289459BC00E9A360 /* StaticJSONMapper.swift */; };
+		3F13509528A2A99E0054ACF6 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F13509428A2A99E0054ACF6 /* DetailViewModel.swift */; };
 		3F1964B52896E0FA00480446 /* PersonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1964B42896E0FA00480446 /* PersonItemView.swift */; };
 		3F1964B82896E42400480446 /* PillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F1964B72896E42400480446 /* PillView.swift */; };
 		3F3BC22E289F06B000A0DEFA /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3BC22D289F06B000A0DEFA /* NetworkingManager.swift */; };
@@ -35,6 +36,7 @@
 		3F0B63F0289458B100E9A360 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
 		3F0B63F32894597B00E9A360 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		3F0B63F6289459BC00E9A360 /* StaticJSONMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticJSONMapper.swift; sourceTree = "<group>"; };
+		3F13509428A2A99E0054ACF6 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		3F1964B42896E0FA00480446 /* PersonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonItemView.swift; sourceTree = "<group>"; };
 		3F1964B72896E42400480446 /* PillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillView.swift; sourceTree = "<group>"; };
 		3F3BC22D289F06B000A0DEFA /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		3F0365AB2889E3D8003896CB /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				3F13509428A2A99E0054ACF6 /* DetailViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				3F1964B52896E0FA00480446 /* PersonItemView.swift in Sources */,
 				3FB100CA28A0043C00D22C57 /* PeopleViewModel.swift in Sources */,
 				3FC3F530289C101D006E44E4 /* CreateView.swift in Sources */,
+				3F13509528A2A99E0054ACF6 /* DetailViewModel.swift in Sources */,
 				3F0B63F42894597B00E9A360 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
