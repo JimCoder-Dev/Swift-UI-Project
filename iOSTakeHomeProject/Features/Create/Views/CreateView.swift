@@ -3,6 +3,7 @@ import SwiftUI
 struct CreateView: View {
     
     @Environment(\.dismiss) private var dismiss
+    @StateObject private var vm = CreateViewModel()
     
     var body: some View {
         NavigationView {
@@ -21,6 +22,11 @@ struct CreateView: View {
                     done
                 }
             }
+            .onChange(of: vm.state){ formState in
+                if formState == .successful{
+                    dismiss()
+                }
+            }
         }
     }
 }
@@ -34,26 +40,26 @@ struct CreateView_Previews: PreviewProvider {
 
 private extension CreateView{
     var firstname: some View{
-        TextField("First name", text: .constant(""))
+        TextField("First name", text: $vm.person.firstName)
     }
     
     var lastname: some View{
-        TextField("Last name", text: .constant(""))
+        TextField("Last name", text: $vm.person.lastName)
     }
     
     var job: some View{
-        TextField("Job", text: .constant(""))
+        TextField("Job", text: $vm.person.job)
     }
     
     var submit: some View{
         Button("Submit") {
-            print("Hello World")
+            vm.create()
         }
     }
     
     var done: some View{
         Button("Done"){
-            dismiss()
+            vm.create()
         }
     }
 }

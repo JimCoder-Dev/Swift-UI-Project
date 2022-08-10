@@ -20,4 +20,9 @@ final class PeopleViewModel: ObservableObject{
             
         }
     }
+    
+    func request(_ absoluteURL: String, completion: @escaping(Result<Void, Error>)-> Void){
+        
+        
+    }
 }
