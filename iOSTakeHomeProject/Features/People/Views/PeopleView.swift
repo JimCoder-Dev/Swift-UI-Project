@@ -40,6 +40,11 @@ struct PeopleView: View {
             .onAppear{
                 vm.fetchUsers()
             }
+            .alert(isPresented: $vm.hasError, error: vm.error){
+                Button("Retry"){
+                    vm.fetchUsers()
+                }
+            }
         }
     }
 }

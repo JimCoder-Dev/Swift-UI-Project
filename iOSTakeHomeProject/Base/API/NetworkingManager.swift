@@ -84,7 +84,7 @@ final class NetworkingManager{
 
 
 extension NetworkingManager{
-    enum NetworkingError: Error{
+    enum NetworkingError: LocalizedError{
         case invalidURL
         case custom(error: Error)
         case invalidStatusCode(statusCode: Int)
@@ -97,6 +97,26 @@ extension NetworkingManager{
     enum MethodType{
         case GET
         case POST(data: Data?)
+    }
+}
+
+
+extension NetworkingManager.NetworkingError{
+    var errorDescription: String?{
+        switch self{
+        case .invalidURL:
+            return "URL isn't valid"
+        
+        case .invalidStatusCode:
+            return "Status code falls into the wrong range"
+        case .invalidData:
+            return "Response data is invalid"
+        case .failedToDecode:
+            return "Failed to decode"
+        case .custom(let err):
+            return "Something went wrong \(err.localizedDescription)"
+        
+        }
     }
 }
 
