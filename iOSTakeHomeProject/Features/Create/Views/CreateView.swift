@@ -16,6 +16,7 @@ struct CreateView: View {
                    submit
                 }
             }
+            .disabled(vm.state == .submitting)
             .navigationTitle("Create")
             .toolbar{
                 ToolbarItem(placement: .primaryAction){
@@ -28,6 +29,11 @@ struct CreateView: View {
                 }
             }
             .alert(isPresented: $vm.hasError, error: vm.error) {}
+            .overlay{
+                if vm.state == .submitting{
+                    ProgressView()
+                }
+            }
         }
     }
 }
