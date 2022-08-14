@@ -5,8 +5,8 @@ struct PeopleView: View {
     private let columns = Array(repeating: GridItem(.flexible()), count: 2)
     
     @StateObject private var vm = PeopleViewModel()
-    
     @State private var shouldShowCreate = false
+    @State private var shouldShowSuccess = false
     
     
     var body: some View {
@@ -36,7 +36,11 @@ struct PeopleView: View {
             }
             .navigationTitle("People")
             .sheet(isPresented: $shouldShowCreate){
-                CreateView()
+                CreateView{
+                    withAnimation(.spring().delay(0.25)){
+                        self.shouldShowSuccess.toggle()
+                    }
+                }
             }
             .toolbar{
                 ToolbarItem(placement: .primaryAction){
@@ -49,6 +53,19 @@ struct PeopleView: View {
             .alert(isPresented: $vm.hasError, error: vm.error){
                 Button("Retry"){
                     vm.fetchUsers()
+                }
+            }
+            .overlay{
+                if shouldShowSuccess{
+                    CheckmarkPopoverView()
+                        .transition(.scale.combined(with: .opacity))
+                        .onAppear{
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
+                                withAnimation(.spring()){
+                                    self.shouldShowSuccess.toggle()
+                                }
+                            }
+                        }
                 }
             }
         }
