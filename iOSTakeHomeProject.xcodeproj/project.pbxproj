@@ -27,6 +27,7 @@
 		3FB100CA28A0043C00D22C57 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB100C928A0043C00D22C57 /* PeopleViewModel.swift */; };
 		3FC3F530289C101D006E44E4 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3F52F289C101D006E44E4 /* CreateView.swift */; };
 		3FC6D84B28A9690C007F7999 /* CheckmarkPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC6D84A28A9690C007F7999 /* CheckmarkPopoverView.swift */; };
+		3FDB00D728AA9EF500242407 /* CreateValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB00D628AA9EF500242407 /* CreateValidator.swift */; };
 		3FFBBDE228A40BE300ED4E24 /* NewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBBDE128A40BE300ED4E24 /* NewPerson.swift */; };
 		3FFBBDE428A40C5300ED4E24 /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBBDE328A40C5300ED4E24 /* CreateViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -53,6 +54,7 @@
 		3FB100C928A0043C00D22C57 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		3FC3F52F289C101D006E44E4 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		3FC6D84A28A9690C007F7999 /* CheckmarkPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckmarkPopoverView.swift; sourceTree = "<group>"; };
+		3FDB00D628AA9EF500242407 /* CreateValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateValidator.swift; sourceTree = "<group>"; };
 		3FED995F288B1276005A3122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3FFBBDE128A40BE300ED4E24 /* NewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPerson.swift; sourceTree = "<group>"; };
 		3FFBBDE328A40C5300ED4E24 /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 		3F0365A22889E361003896CB /* Create */ = {
 			isa = PBXGroup;
 			children = (
+				3FDB00D528AA9EDC00242407 /* Validator */,
 				3F0365AA2889E3CB003896CB /* Views */,
 				3F0365A92889E3C3003896CB /* Model */,
 				3F0365A82889E3BA003896CB /* View Models */,
@@ -299,6 +302,14 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		3FDB00D528AA9EDC00242407 /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				3FDB00D628AA9EF500242407 /* CreateValidator.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -387,6 +398,7 @@
 				3FFBBDE228A40BE300ED4E24 /* NewPerson.swift in Sources */,
 				3FB100CA28A0043C00D22C57 /* PeopleViewModel.swift in Sources */,
 				3FC3F530289C101D006E44E4 /* CreateView.swift in Sources */,
+				3FDB00D728AA9EF500242407 /* CreateValidator.swift in Sources */,
 				3F13509528A2A99E0054ACF6 /* DetailViewModel.swift in Sources */,
 				3F0B63F42894597B00E9A360 /* Models.swift in Sources */,
 			);
