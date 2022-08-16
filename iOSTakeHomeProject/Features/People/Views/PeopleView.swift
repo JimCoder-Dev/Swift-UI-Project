@@ -37,6 +37,7 @@ struct PeopleView: View {
             .navigationTitle("People")
             .sheet(isPresented: $shouldShowCreate){
                 CreateView{
+                    haptic(.success)
                     withAnimation(.spring().delay(0.25)){
                         self.shouldShowSuccess.toggle()
                     }
