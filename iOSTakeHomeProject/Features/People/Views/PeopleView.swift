@@ -48,12 +48,14 @@ struct PeopleView: View {
                     create
                 }
             }
-            .onAppear{
-                vm.fetchUsers()
+            .task{
+                await vm.fetchUsers()
             }
             .alert(isPresented: $vm.hasError, error: vm.error){
                 Button("Retry"){
-                    vm.fetchUsers()
+                    Task{
+                        await vm.fetchUsers()
+                    }
                 }
             }
             .overlay{

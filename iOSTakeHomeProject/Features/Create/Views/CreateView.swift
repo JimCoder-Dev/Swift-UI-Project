@@ -81,14 +81,20 @@ private extension CreateView{
     
     var submit: some View{
         Button("Submit") {
-            vm.create()
+            Task{
+               await vm.create()
+            }
+            
         }
     }
     
     var done: some View{
         Button("Done"){
             focusedField = nil
-            vm.create()
+            Task{
+               await vm.create()
+            }
+            
         }
     }
 }
