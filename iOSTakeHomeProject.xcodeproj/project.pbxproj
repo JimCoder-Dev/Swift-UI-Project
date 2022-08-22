@@ -32,9 +32,20 @@
 		3FDDA2CB28AC131C00781BC8 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDA2CA28AC131C00781BC8 /* HapticsManager.swift */; };
 		3FDDA2CD28AC163E00781BC8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDA2CC28AC163E00781BC8 /* SettingsView.swift */; };
 		3FDDA2D228AC17A900781BC8 /* UserDefaultKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDDA2D128AC17A900781BC8 /* UserDefaultKeys.swift */; };
+		3FF4A1B828B3D107002C2E05 /* JSONMapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF4A1B728B3D107002C2E05 /* JSONMapperTests.swift */; };
 		3FFBBDE228A40BE300ED4E24 /* NewPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBBDE128A40BE300ED4E24 /* NewPerson.swift */; };
 		3FFBBDE428A40C5300ED4E24 /* CreateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFBBDE328A40C5300ED4E24 /* CreateViewModel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FF4A1B128B3D0CD002C2E05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F56E98728884C6000017492 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F56E98E28884C6000017492;
+			remoteInfo = iOSTakeHomeProject;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3F04937D28AD485D000BD569 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
@@ -64,12 +75,21 @@
 		3FDDA2CC28AC163E00781BC8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		3FDDA2D128AC17A900781BC8 /* UserDefaultKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultKeys.swift; sourceTree = "<group>"; };
 		3FED995F288B1276005A3122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		3FF4A1AD28B3D0CD002C2E05 /* iOSTakeHomeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSTakeHomeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF4A1B728B3D107002C2E05 /* JSONMapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONMapperTests.swift; sourceTree = "<group>"; };
 		3FFBBDE128A40BE300ED4E24 /* NewPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPerson.swift; sourceTree = "<group>"; };
 		3FFBBDE328A40C5300ED4E24 /* CreateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3F56E98C28884C6000017492 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF4A1AA28B3D0CD002C2E05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				3F56E99128884C6000017492 /* iOSTakeHomeProject */,
+				3FF4A1AE28B3D0CD002C2E05 /* iOSTakeHomeProjectTests */,
 				3F56E99028884C6000017492 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -278,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				3F56E98F28884C6000017492 /* iOSTakeHomeProject.app */,
+				3FF4A1AD28B3D0CD002C2E05 /* iOSTakeHomeProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -338,6 +360,22 @@
 			path = UserDefaults;
 			sourceTree = "<group>";
 		};
+		3FF4A1AE28B3D0CD002C2E05 /* iOSTakeHomeProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				3FF4A1B628B3D0F5002C2E05 /* Mapper */,
+			);
+			path = iOSTakeHomeProjectTests;
+			sourceTree = "<group>";
+		};
+		3FF4A1B628B3D0F5002C2E05 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				3FF4A1B728B3D107002C2E05 /* JSONMapperTests.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -358,6 +396,24 @@
 			productReference = 3F56E98F28884C6000017492 /* iOSTakeHomeProject.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3FF4A1AC28B3D0CD002C2E05 /* iOSTakeHomeProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FF4A1B528B3D0CD002C2E05 /* Build configuration list for PBXNativeTarget "iOSTakeHomeProjectTests" */;
+			buildPhases = (
+				3FF4A1A928B3D0CD002C2E05 /* Sources */,
+				3FF4A1AA28B3D0CD002C2E05 /* Frameworks */,
+				3FF4A1AB28B3D0CD002C2E05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3FF4A1B228B3D0CD002C2E05 /* PBXTargetDependency */,
+			);
+			name = iOSTakeHomeProjectTests;
+			productName = iOSTakeHomeProjectTests;
+			productReference = 3FF4A1AD28B3D0CD002C2E05 /* iOSTakeHomeProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -370,6 +426,10 @@
 				TargetAttributes = {
 					3F56E98E28884C6000017492 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					3FF4A1AC28B3D0CD002C2E05 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 3F56E98E28884C6000017492;
 					};
 				};
 			};
@@ -387,6 +447,7 @@
 			projectRoot = "";
 			targets = (
 				3F56E98E28884C6000017492 /* iOSTakeHomeProject */,
+				3FF4A1AC28B3D0CD002C2E05 /* iOSTakeHomeProjectTests */,
 			);
 		};
 /* End PBXProject section */
@@ -400,6 +461,13 @@
 				3F56E99728884C6200017492 /* Assets.xcassets in Resources */,
 				3F0B63ED2894575500E9A360 /* SingleUserData.json in Resources */,
 				3F0B63EB2894570500E9A360 /* UsersStaticData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FF4A1AB28B3D0CD002C2E05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,7 +504,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3FF4A1A928B3D0CD002C2E05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FF4A1B828B3D107002C2E05 /* JSONMapperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3FF4A1B228B3D0CD002C2E05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F56E98E28884C6000017492 /* iOSTakeHomeProject */;
+			targetProxy = 3FF4A1B128B3D0CD002C2E05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3F56E99B28884C6200017492 /* Debug */ = {
@@ -611,6 +695,40 @@
 			};
 			name = Release;
 		};
+		3FF4A1B328B3D0CD002C2E05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fusion-development.iOSTakeHomeProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTakeHomeProject.app/iOSTakeHomeProject";
+			};
+			name = Debug;
+		};
+		3FF4A1B428B3D0CD002C2E05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fusion-development.iOSTakeHomeProjectTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSTakeHomeProject.app/iOSTakeHomeProject";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -628,6 +746,15 @@
 			buildConfigurations = (
 				3F56E99E28884C6200017492 /* Debug */,
 				3F56E99F28884C6200017492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3FF4A1B528B3D0CD002C2E05 /* Build configuration list for PBXNativeTarget "iOSTakeHomeProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FF4A1B328B3D0CD002C2E05 /* Debug */,
+				3FF4A1B428B3D0CD002C2E05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
